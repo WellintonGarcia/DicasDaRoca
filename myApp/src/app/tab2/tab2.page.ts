@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab2',
@@ -7,6 +8,12 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  constructor(public nav: NavController) {}
+  abrirPaginaLC(){
+    this.nav.navigateForward('lista-culturas')
+  }
+  abrirPaginaCR(){
+    this.nav.navigateForward('culturas-recomendadas')
+  }
 
 }

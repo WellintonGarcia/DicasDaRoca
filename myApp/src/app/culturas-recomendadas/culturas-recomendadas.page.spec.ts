@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { ListaculturasComponent } from './listaculturas.component';
+import { CulturasRecomendadasPage } from './culturas-recomendadas.page';
 
-describe('ListaculturasComponent', () => {
-  let component: ListaculturasComponent;
-  let fixture: ComponentFixture<ListaculturasComponent>;
+describe('CulturasRecomendadasPage', () => {
+  let component: CulturasRecomendadasPage;
+  let fixture: ComponentFixture<CulturasRecomendadasPage>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ ListaculturasComponent ],
+      declarations: [ CulturasRecomendadasPage ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(ListaculturasComponent);
+    fixture = TestBed.createComponent(CulturasRecomendadasPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

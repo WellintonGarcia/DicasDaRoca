@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { CulturasRecomendadasPage } from './culturas-recomendadas/culturas-recomendadas.page';
+
 
 @Component({
   selector: 'app-root',
