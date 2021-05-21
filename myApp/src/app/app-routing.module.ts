@@ -13,6 +13,14 @@ const routes: Routes = [
   {
     path: 'lista-culturas',
     loadChildren: () => import('./lista-culturas/lista-culturas.module').then( m => m.ListaCulturasPageModule)
+  },
+  {
+    path: 'mandioca',
+    loadChildren: () => import('./mandioca/mandioca.module').then( m => m.MandiocaPageModule)
+  },
+  {
+    path: 'soja',
+    loadChildren: () => import('./soja/soja.module').then( m => m.SojaPageModule)
   }
 ];
 @NgModule({

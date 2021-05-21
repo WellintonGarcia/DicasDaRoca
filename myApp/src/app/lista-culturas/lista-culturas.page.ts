@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-lista-culturas',
@@ -7,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaCulturasPage implements OnInit {
 
-  constructor() { }
+  constructor(public nav: NavController) {}
+  abrirPaginaMandioca(){
+    this.nav.navigateForward('mandioca')
+  }
+  abrirPaginaSoja(){
+    this.nav.navigateForward('soja')
+  }
+
 
   ngOnInit() {
   }
