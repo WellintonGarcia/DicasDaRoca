@@ -2,3 +2,10 @@ ion-content {
     font-family: 'Architects Daughter', cursive;
     }
 
+
+ion-content.background{
+    
+    --background: url(../../assets/icon/FundoMenu.png) no-repeat center center / cover !important;
+      
+    }
+

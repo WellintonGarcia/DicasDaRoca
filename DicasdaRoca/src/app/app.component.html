@@ -1,3 +1,35 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+
+  <ion-menu side="start" menuId="custom" contentId="main" class="my-custom-menu">
+
+    <ion-header>
+
+      <ion-toolbar color="tertiary">
+
+        <ion-title>Menu</ion-title>
+
+      </ion-toolbar>
+
+    </ion-header>
+
+    <ion-content>
+
+      <ion-list>
+
+        <ion-button color="secondary" expand="block" (click)="abrirPaginaMenu('menu')">Menu</ion-button>
+
+        <ion-button color="secondary" expand="block" (click)="abrirPaginaLC('lista-culturas')">Lista Culturas
+        </ion-button>
+
+        <ion-button color="secondary" expand="block" (click)="abrirPaginaCR('culturas-recomendadas')">Culturas
+          Recomendadas</ion-button>
+
+      </ion-list>
+
+    </ion-content>
+
+  </ion-menu>
+
+  <ion-router-outlet id="main"></ion-router-outlet>
+
 </ion-app>

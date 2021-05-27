@@ -1,5 +1,7 @@
 {
   "name": "DicasdaRoca",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

@@ -1,18 +1,23 @@
-
-<ion-content>
+<ion-content padding class = "background">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
     </style>
-      <ion-title color="success"><font size="7">
-        <center><br><br>Dicas <br> da <br> Roça</center></font>
+      <ion-title>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       </ion-title>
 
-</ion-content>
 
-<ion-button size="large" color="secondary" shape="round" (click)="abrirPaginaCR('culturas-recomendadas')">
+
+<ion-button size="large" color="secondary" shape="round" (click)="abrirPaginaCR('culturas-recomendadas')" expand="block">
   Culturas Recomendadas
 </ion-button>
 
-<ion-button size="large" color="secondary" shape="round" (click)="abrirPaginaLC('lista-culturas')">
+<ion-title>
+  <br>
+</ion-title>
+
+
+<ion-button size="large" color="secondary" shape="round" (click)="abrirPaginaLC('lista-culturas')" expand="block">
   Lista de Culturas
 </ion-button>
+</ion-content>
