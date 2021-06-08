@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { NavController } from '@ionic/angular';
+
+
 @Component({
   selector: 'app-milho',
   templateUrl: './milho.page.html',
@@ -7,7 +10,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MilhoPage implements OnInit {
 
-  constructor() { }
+  constructor(public nav: NavController) {}
+  abrirPaginaLC(){
+    this.nav.navigateForward('lista-culturas')
+  }
 
   ngOnInit() {
   }

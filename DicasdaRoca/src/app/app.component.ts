@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 
-import { NavController } from '@ionic/angular';
-
+import { NavController, Platform } from '@ionic/angular';
 
 
 @Component({
@@ -16,7 +15,21 @@ import { NavController } from '@ionic/angular';
 
 export class AppComponent {
 
-  constructor(public nav: NavController) { }
+  constructor(
+    public nav: NavController,
+    private platform: Platform,
+    ) {
+      this.initializeApp();
+     }
+
+
+  initializeApp(){
+
+    this.platform.ready().then(() => {
+      this.nav.navigateForward('splash')
+    })
+
+  }
 
   abrirPaginaLC() {
 

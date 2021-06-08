@@ -9,6 +9,9 @@ import { NavController } from '@ionic/angular';
 export class ListaCulturasPage implements OnInit {
 
   constructor(public nav: NavController) {}
+  abrirPaginaMenu(){
+    this.nav.navigateForward('menu')
+  }
   abrirPaginaMandioca(){
     this.nav.navigateForward('mandioca')
   }

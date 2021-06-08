@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { NavController } from '@ionic/angular';
+
 @Component({
   selector: 'app-culturas-recomendadas',
   templateUrl: './culturas-recomendadas.page.html',
@@ -7,7 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CulturasRecomendadasPage implements OnInit {
 
-  constructor() { }
+  constructor(public nav: NavController) {}
+
+  abrirPaginaMenu(){
+
+    this.nav.navigateForward('menu')
+
+  }
 
   ngOnInit() {
   }

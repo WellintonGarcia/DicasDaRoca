@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { NavController } from '@ionic/angular';
+
 @Component({
   selector: 'app-mandioca',
   templateUrl: './mandioca.page.html',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MandiocaPage implements OnInit {
 
-  constructor() { }
+  constructor(public nav: NavController) {}
+  abrirPaginaLC(){
+    this.nav.navigateForward('lista-culturas')
+  }
 
   ngOnInit() {
   }
