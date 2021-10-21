@@ -1,0 +1,36 @@
+<ion-content padding class = "background">
+
+  <br><ion-button size="large" color="success" (click)="abrirPaginaMC('menu-calc')" expand="block">
+    CADASTRO DE FATURAMENTOS
+  </ion-button>
+  <br>
+
+<ion-content>
+<h3><center>Cadastre seus novos faturamentos:</center></h3>
+<h5><center>De que é esse recebimento? Selecione uma das opções abaixo ou cadastre um novo tipo de recebimento clicando em outro:</center></h5>
+
+<ion-button size="large" color="secondary" shape="round" expand="block">
+  Faturamento 1
+</ion-button>
+
+<ion-button size="large" color="secondary" shape="round" expand="block">
+  Faturamento 2
+</ion-button>
+
+<ion-button size="large" color="secondary" shape="round" expand="block">
+  Faturamento 3
+</ion-button>
+
+<ion-button size="large" color="secondary" shape="round" (click)="abrirPaginaCP('cad-prod')" expand="block">
+  Outro
+</ion-button>
+
+<ion-item>
+  <ion-label position="floating">Digite o valor do faturamento:</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+
+<br>
+    <ion-button size="large" color="secondary" shape="round" (click)="abrirPaginaCP('cad-prod')" expand="block">
+      Salvar Alterações
+    </ion-button>

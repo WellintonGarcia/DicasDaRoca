@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import { NavController } from '@ionic/angular';
 
 @Component({
@@ -12,9 +11,7 @@ export class CulturasRecomendadasPage implements OnInit {
   constructor(public nav: NavController) {}
 
   abrirPaginaMenu(){
-
-    this.nav.navigateForward('menu')
-
+    this.nav.navigateForward('menu');
   }
 
   ngOnInit() {

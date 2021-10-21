@@ -1,0 +1,44 @@
+<ion-content padding class = "background">
+
+  <br><ion-button size="large" color="success" (click)="abrirPaginaMC('menu-calc')" expand="block">
+    CADASTRO DE DESPESAS
+  </ion-button>
+  <br>
+
+<ion-content>
+  <h3><center>Cadastre suas novas despesas:</center></h3>
+  <h5><center>De que é essa despesa? Selecione uma das opções abaixo ou cadastre um novo produto clicando em outro:</center></h5>
+  
+  <ion-button size="large" color="secondary" shape="round" expand="block">
+    Adubos e fertilizantes
+  </ion-button>
+
+  <ion-button size="large" color="secondary" shape="round" expand="block">
+    Rações para animais
+  </ion-button>
+
+  <ion-button size="large" color="secondary" shape="round" expand="block">
+    Sementes
+  </ion-button>
+
+  <ion-button size="large" color="secondary" shape="round" expand="block">
+    Defensivos agrícolas
+  </ion-button>
+
+  <ion-button size="large" color="secondary" shape="round" (click)="abrirPaginaCP('cad-prod')" expand="block">
+    Outro
+  </ion-button>
+
+  <ion-item>
+    <ion-label position="floating">Digite o valor da despesa:</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-checkbox color="secondary" slot="start"></ion-checkbox>
+    <ion-label>É uma despesa recorrente?'</ion-label>
+  </ion-item>
+<br>
+      <ion-button size="large" color="secondary" shape="round" (click)="abrirPaginaCP('cad-prod')" expand="block">
+        Salvar Alterações
+      </ion-button>

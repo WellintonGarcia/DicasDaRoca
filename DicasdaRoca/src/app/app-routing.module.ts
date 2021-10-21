@@ -46,6 +46,26 @@ const routes: Routes = [
     path: 'menu',
     loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
   },
+  {
+    path: 'menu-calc',
+    loadChildren: () => import('./menu-calc/menu-calc.module').then( m => m.MenuCalcPageModule)
+  },
+  {
+    path: 'cad-prod',
+    loadChildren: () => import('./cad-prod/cad-prod.module').then( m => m.CadProdPageModule)
+  },
+  {
+    path: 'cad-faturamentos',
+    loadChildren: () => import('./cad-faturamentos/cad-faturamentos.module').then( m => m.CadFaturamentosPageModule)
+  },
+  {
+    path: 'cad-despesas',
+    loadChildren: () => import('./cad-despesas/cad-despesas.module').then( m => m.CadDespesasPageModule)
+  },
+  {
+    path: 'acomp-lucros',
+    loadChildren: () => import('./acomp-lucros/acomp-lucros.module').then( m => m.AcompLucrosPageModule)
+  },
 ];
 
 @NgModule({

@@ -10,10 +10,13 @@ export class MenuPage implements OnInit {
 
   constructor(public nav: NavController) {}
   abrirPaginaLC(){
-    this.nav.navigateForward('lista-culturas')
+    this.nav.navigateForward('lista-culturas');
   }
   abrirPaginaCR(){
-    this.nav.navigateForward('culturas-recomendadas')
+    this.nav.navigateForward('culturas-recomendadas');
+  }
+  abrirPaginaMC(){
+    this.nav.navigateForward('menu-calc');
   }
 
   ngOnInit() {

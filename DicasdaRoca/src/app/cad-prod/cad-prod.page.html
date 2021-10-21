@@ -1,0 +1,29 @@
+<ion-content padding class = "background">
+
+  <br><ion-button size="large" color="success" (click)="abrirPaginaMC('menu-calc')" expand="block">
+    CADASTRO DE PRODUTOS
+  </ion-button>
+  <br>
+
+  <ion-content>
+    <h3><center>Preencha as informações abaixo:</center></h3><br>
+    <h5><center>Trata-se de uma despesa ou um faturamento?</center></h5>
+    <br>
+    <ion-item>
+      <ion-checkbox color="secondary" slot="start"></ion-checkbox>
+      <ion-label>Despesa</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox color="secondary" slot="start"></ion-checkbox>
+      <ion-label>Faturamento</ion-label>
+    </ion-item>
+    <br><br><br>
+<ion-item>
+  <ion-label position="floating">Digite o nome:</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+
+    <br><br><br><br>
+    <ion-button size="large" color="secondary" shape="round" (click)="abrirPaginaCP('cad-prod')" expand="block">
+      Salvar Alterações
+    </ion-button>
