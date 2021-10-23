@@ -1,36 +1,36 @@
 <ion-content padding class = "background">
 
-  <br><ion-button size="large" color="success" (click)="abrirPaginaMC('menu-calc')" expand="block">
-    CADASTRO DE FATURAMENTOS
+
+  <ion-button class="initbutton" (click)="abrirPaginaMC('menu-calc')" >
+    <span class="texto">CADASTRO DE FATURAMENTOS</span>
   </ion-button>
-  <br>
+
 
 <ion-content>
-<h3><center>Cadastre seus novos faturamentos:</center></h3>
-<h5><center>De que é esse recebimento? Selecione uma das opções abaixo ou cadastre um novo tipo de recebimento clicando em outro:</center></h5>
+<h3>Cadastre seus novos faturamentos:</h3>
+<h5>De que é esse recebimento? Selecione uma das opções abaixo ou cadastre um novo tipo de recebimento clicando em outro:</h5>
 
-<ion-button size="large" color="secondary" shape="round" expand="block">
-  Faturamento 1
+<ion-button class="padrao" size="large" color="secondary" shape="round">
+  <span class="texto">Faturamento 1</span>
 </ion-button>
 
-<ion-button size="large" color="secondary" shape="round" expand="block">
-  Faturamento 2
+<ion-button class="padrao" size="large" color="secondary" shape="round" >
+  <span class="texto">Faturamento 2</span>
 </ion-button>
 
-<ion-button size="large" color="secondary" shape="round" expand="block">
-  Faturamento 3
+<ion-button class="padrao" size="large" color="secondary" shape="round" >
+  <span class="texto">Faturamento 3</span>
 </ion-button>
 
-<ion-button size="large" color="secondary" shape="round" (click)="abrirPaginaCP('cad-prod')" expand="block">
-  Outro
+<ion-button class="padrao" size="large" color="secondary" shape="round" (click)="abrirPaginaCP('cad-prod')" >
+  <span class="texto">Outro</span>
 </ion-button>
 
-<ion-item>
-  <ion-label position="floating">Digite o valor do faturamento:</ion-label>
-  <ion-input></ion-input>
-</ion-item>
 
-<br>
-    <ion-button size="large" color="secondary" shape="round" (click)="abrirPaginaCP('cad-prod')" expand="block">
+<br><ion-input class="item" type="text" placeholder="Digite o valor do faturamento: "></ion-input>
+
+
+
+    <ion-button class="texto" id="b" shape="round" (click)="abrirPaginaCP('cad-prod')" >
       Salvar Alterações
     </ion-button>

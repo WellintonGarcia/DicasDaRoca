@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@900&family=Open+Sans:wght@300;400&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.initbutton {
+  --background:&background;
+  background: #25A18E;
+  width: 308px;
+  height: 147px;
+  margin-top: 43px;
+  margin-left: 28px;
+  border: 2px solid #22577A;
+  border-radius: 22px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color:#22577A;
+  font-weight: bold;
+
+}
+
+h3 {
+  padding: 10px;
+  font-size: 20px;
+  color: #25A18E;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 27px;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 15px;
+  line-height: 20px;
+  align-items: center;
+  margin-left: 31px;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.padrao {
+  --background: #25A18E;
+  width: 247px;
+  height: 35px;
+  margin: 1px;
+  margin-left: 61px;
+  border: 2px solid #22577A;
+  border-radius: 20px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.item {
+  --background: #C7F9CC;
+    border-radius: 30px;
+    width: 314px;
+    height: 62px;
+    left: 28px;
+    color: #22577A;
+    border: 2px solid #25A18E;
+    font-size: 15px;
+    line-height: 17px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+#b {
+  --background: #25A18E;
+  background:#25A18E;
+  width: 227px;
+  height: 49px;
+  left: 63px;
+  border: 2px solid #22577A;
+  border-radius: 19px;
+  margin-left: 63px;
+}
+
+
+
