@@ -1,26 +1,28 @@
+
 <ion-content padding class = "background">
 
-  <br><ion-button size="large" color="success" (click)="abrirPaginaMenu('menu')" expand="block">
-    GESTÃO DE FINANÇAS
+  <br>
+  <ion-button class="buttonin" (click)="abrirPaginaMenu('menu')" >
+    <span class="texto">GESTÃO DE FINANÇAS</span>
   </ion-button>
   <br>
 
 <ion-content>
-  <br><br><br><br><br><br><br><br>
-  <ion-button size="large" color="secondary" shape="round" (click)="abrirPaginaCP('cad-prod')" expand="block">
-    Cadastro de produtos
-  </ion-button>
-  <br>
-  <ion-button size="large" color="secondary" shape="round" (click)="abrirPaginaCF('caf-faturamentos')" expand="block">
-    Cadastro de faturamentos
-  </ion-button>
-  <br>
-  <ion-button size="large" color="secondary" shape="round" (click)="abrirPaginaCD('cad-despesas')" expand="block">
-    Cadastro de despesas
-  </ion-button>
-  <br>
-  <ion-button size="large" color="secondary" shape="round" (click)="abrirPaginaAL('acomp-lucros')" expand="block">
-    Acompanhamento de lucros
-  </ion-button>
 
+  <ion-button class="button1" (click)="abrirPaginaCP('cad-prod')">
+    <span class="texto"> Cadastro de produtos</span>
+  </ion-button>
+  <br>
+  <ion-button class="button2" color="none"(click)="abrirPaginaCF('caf-faturamentos')" >
+    <span class="texto">Cadastro de faturamentos</span>
+
+  </ion-button>
+  <br>
+  <ion-button class="button3" color="none"(click)="abrirPaginaCD('cad-despesas')" >
+    <span class="texto">Cadastro de despesas</span>
+  </ion-button>
+  <br>
+  <ion-button class="button4" color="none"(click)="abrirPaginaAL('acomp-lucros')" >
+    <span class="texto">Acompanhamento de lucros</span>
+    </ion-button>
 </ion-content>

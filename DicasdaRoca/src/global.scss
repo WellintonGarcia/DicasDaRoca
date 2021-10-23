@@ -24,3 +24,87 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@900&family=Open+Sans:wght@300;400&display=swap');
+
+ion-content {
+  --background: #9FFFCB;
+
+}
+
+
+.buttonin {
+   --background: $background;
+   background: #25A18E;
+    width: 308px;
+    height: 147px;
+    border-radius: 22px;
+    border: 2px solid #004E64;
+    margin-left: 29px;
+    margin-top: 23px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #004E64;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.button1 {
+    --background:$background;
+    background:  #25A18E;
+    border-radius: 20px;
+    border: 2px solid #004E64;
+    width: 248px;
+    height: 70px;
+    left: 59px;
+    margin-left: 59px;
+    margin-top: 83px;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.button2 {
+    border-radius: 20px;
+    border: 2px solid #004E64;
+    background:  #25A18E;
+    width: 248px;
+    height: 70px;
+    left: 59px;
+    margin-left: 59px;
+    top: 310px;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.button3 {
+    background: #25A18E;
+    border-radius: 20px;
+    border: 2px solid #004E64;
+    width: 248px;
+    height: 70px;
+    left: 59px;
+    margin-left: 59px;
+    top: 383px;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.button4 {
+    background: #25A18E;
+    border-radius: 22px;
+    border: 2px solid #004E64;
+    width: 250px;
+    height: 70px;
+    left: 59px;
+    margin-left: 59px;
+    top: 529px;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.texto {
+  text-shadow: 2px 2px black;
+
+}
+
+

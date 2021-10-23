@@ -24,7 +24,7 @@ export class MenuCalcPage implements OnInit {
   abrirPaginaMenu(){
     this.nav.navigateForward('menu');
   }
-
+  
   ngOnInit() {
   }
 
