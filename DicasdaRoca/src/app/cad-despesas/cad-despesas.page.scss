@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@900&family=Open+Sans:wght@300;400&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+.initbutton2 {
+  --background:&background;
+  background: #25A18E;
+  width: 308px;
+  height: 147px;
+  margin-top: 35px;
+  margin-left: 28px;
+  border: 2px solid #22577A;
+  border-radius: 22px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color:#22577A;
+  font-weight: bold;
+}
+
+.text2{
+  width: 350px;
+  height: 40px;
+  left: 8px;
+  color:#25A18E;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.text3{
+  color: #000000;
+  height: 75px;
+  text-align: center;
+  margin-left: 35px;
+  margin-right: 35px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.botoes {
+  width: 247px;
+  height: 35px;
+  left: 61px;
+  --background: #25A18E;
+  margin: 1px 0 0 0;
+  margin-left: 60px;
+  border: 2px solid #22577A;
+  border-radius: 20px;
+  line-height: 20px;
+}
+
+.backinput {
+  --background: #C7F9CC;
+  border-radius: 30px;
+  border: 2px solid #25A18E;
+  text-align: center;
+  align-items: center;
+  width: 310px;
+  height: 44px;
+  left: 28px;
+  padding: 4px;
+  margin: 9px 0 0 0;
+}
+
+.formgroup {
+  margin: 15px 0 0 50px;
+  display:flex;
+  align-items: center;
+}
+
+.formgroup label {
+  padding-left: 15px;
+
+}
+
+.radio {
+  cursor: pointer;
+  appearance:none;
+  background:#C7F9CC;
+  width: 19px;
+  height: 22px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  position: relative;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radio:before {
+  cursor: pointer;
+  content: '';
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  background: #000000;
+  border-radius: 10px;
+  opacity: 0;
+
+}
+
+.radio:checked:before {
+  opacity: 1;
+}
+
+.buttonsave {
+  width: 227px;
+  height: 49px;
+  left: 71px;
+  --background: #25A18E;
+  margin: 0 70px 0 70px;
+  border: 2px solid #22577A;
+  outline: none;
+  border-radius: 24px;
+}
+
+label {
+  color:#000000;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+
+
+

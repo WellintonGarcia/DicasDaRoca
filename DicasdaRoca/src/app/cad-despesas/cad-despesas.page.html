@@ -1,44 +1,46 @@
 <ion-content padding class = "background">
 
-  <br><ion-button size="large" color="success" (click)="abrirPaginaMC('menu-calc')" expand="block">
-    CADASTRO DE DESPESAS
+  <br><ion-button  class="initbutton2" (click)="abrirPaginaMC('menu-calc')">
+    <span class="texto">CADASTRO DE DESPESAS</span>
   </ion-button>
   <br>
 
 <ion-content>
-  <h3><center>Cadastre suas novas despesas:</center></h3>
-  <h5><center>De que é essa despesa? Selecione uma das opções abaixo ou cadastre um novo produto clicando em outro:</center></h5>
-  
-  <ion-button size="large" color="secondary" shape="round" expand="block">
-    Adubos e fertilizantes
+  <h3 class="text2">Cadastre suas novas despesas:</h3>
+  <h5 class="text3">De que é essa despesa? Selecione uma das opções abaixo ou cadastre um novo produto clicando em outro:</h5>
+
+  <ion-button class="botoes" shape="round" >
+    <span class="texto">Adubos e fertilizantes</span>
   </ion-button>
 
-  <ion-button size="large" color="secondary" shape="round" expand="block">
-    Rações para animais
+  <ion-button class="botoes" shape="round" >
+    <span class="texto">Rações para animais</span>
   </ion-button>
 
-  <ion-button size="large" color="secondary" shape="round" expand="block">
-    Sementes
+  <ion-button class="botoes" shape="round" >
+    <span class="texto">Sementes</span>
   </ion-button>
 
-  <ion-button size="large" color="secondary" shape="round" expand="block">
-    Defensivos agrícolas
+  <ion-button class="botoes" shape="round">
+    <span class="texto">Defensivos agrícolas</span>
   </ion-button>
 
-  <ion-button size="large" color="secondary" shape="round" (click)="abrirPaginaCP('cad-prod')" expand="block">
-    Outro
+  <ion-button  class="botoes" shape="round" (click)="abrirPaginaCP('cad-prod')" >
+    <span class="texto">Outro</span>
   </ion-button>
 
-  <ion-item>
-    <ion-label position="floating">Digite o valor da despesa:</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-  
-  <ion-item>
-    <ion-checkbox color="secondary" slot="start"></ion-checkbox>
-    <ion-label>É uma despesa recorrente?'</ion-label>
-  </ion-item>
+
+    <ion-input class="backinput" placeholder="Digite o valor da despesa:"></ion-input>
+
+
+    <div class="formgroup">
+        <input class="radio"  type="radio">
+        <label>É uma despesa recorrente?</label>
+    </div>
+
 <br>
-      <ion-button size="large" color="secondary" shape="round" (click)="abrirPaginaCP('cad-prod')" expand="block">
-        Salvar Alterações
+      <ion-button class="buttonsave" shape="round" (click)="abrirPaginaCP('cad-prod')">
+        <span class="texto">Salvar Alterações</span>
       </ion-button>
+
+

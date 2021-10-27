@@ -20,7 +20,6 @@
   font-size: 18px;
   color:#22577A;
   font-weight: bold;
-
 }
 
 h3 {
@@ -38,6 +37,7 @@ h5 {
   line-height: 20px;
   align-items: center;
   margin-left: 31px;
+  margin-bottom: 21px;
   font-weight: bold;
   font-family: 'Open Sans', sans-serif;
 }
@@ -67,17 +67,18 @@ h5 {
     text-align: center;
     font-weight: bold;
     margin-top: 1.5rem;
+    margin: 10px 0 0 0;
 }
 
 #b {
   --background: #25A18E;
-  background:#25A18E;
-  width: 227px;
+  width: 247px;
   height: 49px;
   left: 63px;
   border: 2px solid #22577A;
-  border-radius: 19px;
-  margin-left: 63px;
+  border-radius: 24px;
+  margin: 17px 0 0 63px;
+
 }
 
 
