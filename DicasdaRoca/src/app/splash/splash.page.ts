@@ -14,7 +14,7 @@ export class SplashPage {
 
       this.nav.navigateForward('menu')
 
-    }, 3000);
+    }, 1000);
 
   }
 

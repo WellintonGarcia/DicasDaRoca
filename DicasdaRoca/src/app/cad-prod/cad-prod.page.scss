@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@900&family=Open+Sans:wght@300;400&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.cadbutton {
+  --background:&background;
+  background: #25A18E;
+  width: 308px;
+  height: 147px;
+  margin-top: 43px;
+  margin-left: 28px;
+  border: 2px solid #22577A;
+  border-radius: 22px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  color:#22577A;
+  font-weight: bold;
+}
+
+h3 {
+  width: 360px;
+  height: 40px;
+  left: 8px;
+  color:#25A18E;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 15px;
+  margin: 0 20px 0 20px;
+}
+
+h5 {
+  width: 360px;
+  height: 40px;
+  left: 55px;
+  color: #000000;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formgroup {
+  display:flex;
+  justify-content: center;
+}
+
+.formgroup label {
+  width: 100px;
+  height: 44px;
+  color:#000000;
+  font-size: 15px;
+  font-family: Arial;
+  font-weight: bold;
+  margin-left: 10px;
+
+}
+
+.radio {
+  cursor: pointer;
+  appearance: none;
+  width: 19px;
+  height: 22px;
+  background: #C7F9CC;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  position: relative;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radio:before {
+  cursor: pointer;
+  content: '';
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  background: #000000;
+  border-radius: 10px;
+  opacity: 0;
+
+}
+
+.radio:checked:before {
+  opacity: 1;
+}
+
+.inputtext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.insideInput {
+  text-align: center;
+  width: 302px;
+  height: 73px;
+  border-radius: 30px;
+  border: 2px solid #25A18E;
+  background: #C7F9CC;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial;
+  outline: none;
+
+}
+
+.insideInput::placeholder{
+  color:#22577A;
+}
+
+.divbuttonsave {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonsave {
+  width: 247px;
+  height: 84px;
+  --background: #25A18E;
+  border: 2px solid #22577A;
+  border-radius: 43px;
+  margin-top: 42px;
+}
+
+
+
+
