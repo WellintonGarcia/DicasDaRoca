@@ -10,31 +10,31 @@
   <h5 class="text3">De que é essa despesa? Selecione uma das opções abaixo ou cadastre um novo produto clicando em outro:</h5>
 
   <ion-button class="botoes" shape="round" >
-    <span class="texto">Adubos e fertilizantes</span>
+    <form><span class="texto">Adubos e fertilizantes</span></form>
   </ion-button>
 
   <ion-button class="botoes" shape="round" >
-    <span class="texto">Rações para animais</span>
+    <form><span class="texto">Rações para animais</span></form>
   </ion-button>
 
   <ion-button class="botoes" shape="round" >
-    <span class="texto">Sementes</span>
+    <form><span class="texto">Sementes</span></form>
   </ion-button>
 
   <ion-button class="botoes" shape="round">
-    <span class="texto">Defensivos agrícolas</span>
+    <form><span class="texto">Defensivos agrícolas</span></form>
   </ion-button>
 
   <ion-button  class="botoes" shape="round" (click)="abrirPaginaCP('cad-prod')" >
-    <span class="texto">Outro</span>
+    <form><span class="texto">Outro</span></form>
   </ion-button>
 
 
-    <ion-input class="backinput" placeholder="Digite o valor da despesa:"></ion-input>
+  <form><ion-input class="backinput" placeholder="Digite o valor da despesa:"></ion-input></form>
 
 
     <div class="formgroup">
-        <input class="radio"  type="radio">
+      <form><input class="radio" name="Despesa Recorrente" type="radio"></form>
         <label>É uma despesa recorrente?</label>
     </div>
 
