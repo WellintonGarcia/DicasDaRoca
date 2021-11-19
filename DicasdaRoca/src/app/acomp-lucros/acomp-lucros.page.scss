@@ -9,3 +9,103 @@ ion-content.background{
   --background: url(../../assets/icon/lucros-f.jpg) no-repeat center center / cover !important;
 
 }
+
+.backinput {
+  --background: #C7F9CC;
+  border-radius: 30px;
+  border: 2px solid #25A18E;
+  text-align: center;
+  align-items: center;
+  width: 310px;
+  height: 44px;
+  left: 28px;
+  padding: 4px;
+  margin: 9px 0 0 0;
+}
+
+.buttonsave {
+  width: 227px;
+  height: 49px;
+  left: 71px;
+  --background: #25A18E;
+  margin: 0 70px 0 70px;
+  border: 2px solid #22577A;
+  outline: none;
+  border-radius: 24px;
+}
+
+.formgroup {
+  display:flex;
+  justify-content: center;
+}
+
+.formgroup label {
+  width: 100px;
+  height: 44px;
+  color:#000000;
+  font-size: 15px;
+  font-family: Arial;
+  font-weight: bold;
+  margin-left: 10px;
+
+}
+
+.radio {
+  cursor: pointer;
+  appearance: none;
+  width: 19px;
+  height: 22px;
+  background: #C7F9CC;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  position: relative;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radio:before {
+  cursor: pointer;
+  content: '';
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  background: #000000;
+  border-radius: 10px;
+  opacity: 0;
+
+}
+
+.radio:checked:before {
+  opacity: 1;
+}
+
+.inputtext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.insideInput {
+  text-align: center;
+  width: 302px;
+  height: 73px;
+  border-radius: 30px;
+  border: 2px solid #25A18E;
+  background: #C7F9CC;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial;
+  outline: none;
+
+}
+
+.insideInput::placeholder{
+  color:#22577A;
+}
+
+.divbuttonsave {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

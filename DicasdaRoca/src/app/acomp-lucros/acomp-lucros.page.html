@@ -24,10 +24,32 @@
     </ion-item>
   </ion-list>
 
+  <ion-input class="backinput" [(ngModel)]='mes' placeholder="Digite o mês que deseja consultar:"></ion-input>
+
+  <ion-input class="backinput" [(ngModel)]='ano' placeholder="Digite o ano (XXXX) que deseja consultar:"></ion-input>
+
+
+  <ion-button class="buttonsave" (click)="selecaoDesp()" shape="round" >
+    <span class="texto">Despesas</span>
+  </ion-button>
+
+  <ion-button class="buttonsave" (click)="selecaoFatur()" shape="round" >
+    <span class="texto">Faturamentos</span>
+  </ion-button>
+
+  <ion-button class="buttonsave" (click)="ngOnInit()" shape="round" >
+    <span class="texto">Consultar</span>
+  </ion-button>
 
  <!-- Header -->
 {{nomeDespesa}}
 {{valorDespesa}}
+
+{{mes}}
+{{ano}}
+
+{{nomeFaturamento}}
+{{valorFaturamento}}
 
 
 </ion-content>
