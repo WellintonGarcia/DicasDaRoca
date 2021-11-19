@@ -8,24 +8,9 @@
 
 <ion-content>
 <h3>Cadastre seus novos faturamentos:</h3>
-<h5>De que é esse recebimento? Selecione uma das opções abaixo ou cadastre um novo tipo de recebimento clicando em outro:</h5>
+<h5>De que é esse recebimento? Preencha o nome e o valor do recebimento:</h5>
 
-<ion-button class="padrao" size="large" color="secondary" shape="round">
-  <form><span class="texto">Venda - Sacas Milho</span></form>
-</ion-button>
-
-<ion-button class="padrao" size="large" color="secondary" shape="round" >
-  <form><span class="texto">Venda - Galões Leite</span></form>
-</ion-button>
-
-<ion-button class="padrao" size="large" color="secondary" shape="round" >
-  <form><span class="texto">Venda - Sacas Soja</span></form>
-</ion-button>
-
-<ion-button class="padrao" size="large" color="secondary" shape="round" (click)="abrirPaginaCP('cad-prod')" >
-  <span class="texto">Outro</span>
-</ion-button>
-
+<br><form><ion-input class="item" type="text" placeholder="Digite o nome do faturamento: "></ion-input></form>
 
 <br><form><ion-input class="item" type="text" placeholder="Digite o valor do faturamento: "></ion-input></form>
 

@@ -15,16 +15,12 @@ export class MenuCalcPage implements OnInit {
   abrirPaginaCF(){
     this.nav.navigateForward('cad-faturamentos');
   }
-  abrirPaginaCP(){
-    this.nav.navigateForward('cad-prod');
-  }
   abrirPaginaAL(){
     this.nav.navigateForward('acomp-lucros');
   }
   abrirPaginaMenu(){
     this.nav.navigateForward('menu');
   }
-  
   ngOnInit() {
   }
 

@@ -7,28 +7,9 @@
 
 <ion-content>
   <h3 class="text2">Cadastre suas novas despesas:</h3>
-  <h5 class="text3">De que é essa despesa? Selecione uma das opções abaixo ou cadastre um novo produto clicando em outro:</h5>
+  <h5 class="text3">De que é essa despesa? Preencha o nome e o valor da despesa:</h5>
 
-  <ion-button class="botoes" shape="round" >
-    <form><span class="texto">Adubos e fertilizantes</span></form>
-  </ion-button>
-
-  <ion-button class="botoes" shape="round" >
-    <form><span class="texto">Rações para animais</span></form>
-  </ion-button>
-
-  <ion-button class="botoes" shape="round" >
-    <form><span class="texto">Sementes</span></form>
-  </ion-button>
-
-  <ion-button class="botoes" shape="round">
-    <form><span class="texto">Defensivos agrícolas</span></form>
-  </ion-button>
-
-  <ion-button  class="botoes" shape="round" (click)="abrirPaginaCP('cad-prod')" >
-    <form><span class="texto">Outro</span></form>
-  </ion-button>
-
+  <form><ion-input class="backinput" placeholder="Digite o nome da despesa:"></ion-input></form>
 
   <form><ion-input class="backinput" placeholder="Digite o valor da despesa:"></ion-input></form>
 

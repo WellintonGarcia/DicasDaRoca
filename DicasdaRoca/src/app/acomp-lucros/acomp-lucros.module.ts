@@ -13,7 +13,7 @@ import { AcompLucrosPage } from './acomp-lucros.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    AcompLucrosPageRoutingModule
+    AcompLucrosPageRoutingModule,
   ],
   declarations: [AcompLucrosPage]
 })
