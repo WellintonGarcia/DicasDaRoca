@@ -9,9 +9,9 @@
   <h3 class="text2">Cadastre suas novas despesas:</h3>
   <h5 class="text3">De que é essa despesa? Preencha o nome e o valor da despesa:</h5>
 
-  <form><ion-input class="backinput" placeholder="Digite o nome da despesa:"></ion-input></form>
+  <ion-input class="backinput" [(ngModel)]='nomeDespesa' placeholder="Digite o nome da despesa:"></ion-input>
 
-  <form><ion-input class="backinput" placeholder="Digite o valor da despesa:"></ion-input></form>
+  <ion-input class="backinput" [(ngModel)]='valorDespesa' placeholder="Digite o valor da despesa:"></ion-input>
 
 
     <div class="formgroup">
@@ -20,7 +20,7 @@
     </div>
 
 <br>
-      <ion-button class="buttonsave" shape="round" (click)="abrirPaginaMC('menu-calc')">
+      <ion-button class="buttonsave" (click)="saveInfosDesp()" shape="round" >
         <span class="texto">Salvar Alterações</span>
       </ion-button>
 

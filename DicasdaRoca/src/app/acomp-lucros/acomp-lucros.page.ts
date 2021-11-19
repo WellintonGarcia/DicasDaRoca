@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,17 +10,17 @@ import { Router } from '@angular/router';
 })
 export class AcompLucrosPage implements OnInit {
   nomeDespesa: string;
+  valorDespesa: number;
 
-  constructor(public nav: NavController, private http: HttpClient, private router: Router) {}
+  constructor(public nav: NavController, private http: HttpClient) {}
   abrirPaginaMC(){
     this.nav.navigateForward('menu-calc');
   }
 
   ngOnInit() {
     this.http.get('https://api-dicasdaroca.herokuapp.com/find/despesas/soja').subscribe(data => {
-      this.nomeDespesa = data['.nome'];
-    }, (err)=>{
-      this.router.navigate(['connection-error']);
+      this.nomeDespesa = data[0]['nome'],
+      this.valorDespesa = data[0]['valor'];
     });
     }
 
