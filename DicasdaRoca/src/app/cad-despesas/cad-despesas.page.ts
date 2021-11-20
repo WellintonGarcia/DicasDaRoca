@@ -10,6 +10,9 @@ import { HttpClient } from '@angular/common/http';
 export class CadDespesasPage implements OnInit {
   nomeDespesa: string;
   valorDespesa: number;
+  mesDespesa: number;
+  anoDespesa: number;
+
   constructor(public nav: NavController, private http: HttpClient) {}
   abrirPaginaMC(){
     this.nav.navigateForward('menu-calc');
@@ -18,7 +21,7 @@ export class CadDespesasPage implements OnInit {
     this.nav.navigateForward('cad-prod');
   }
   saveInfosDesp(){
-    this.http.get('https://api-dicasdaroca.herokuapp.com/despesa/'+this.nomeDespesa+'/'+this.valorDespesa).subscribe(data=> {
+    this.http.get('https://api-dicasdaroca.herokuapp.com/despesa/'+this.nomeDespesa+'/'+this.valorDespesa+'/'+this.mesDespesa+'/'+this.anoDespesa).subscribe(data=> {
       console.log(data);});
   }
 
