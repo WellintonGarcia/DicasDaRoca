@@ -1,6 +1,8 @@
 <ion-content padding class = "background">
-  <br><ion-button size="large" color="success" (click)="abrirPaginaMC('menu-calc')" expand="block">
-    ACOMPANHAMENTO DE LUCROS
+  <br><ion-button class="buttonAcomp" (click)="abrirPaginaMC('menu-calc')">
+    <span class="texto" id="fontSize">
+      ACOMPANHAMENTO DE LUCROS
+    </span>
   </ion-button>
 
   <br>
@@ -9,17 +11,17 @@
 
 
 
-  <ion-list>
+  <ion-list background="none">
 
     <ion-item>
-      <ion-label>Data Inicial</ion-label>
+      <ion-label class="labelData">Data Inicial</ion-label>
       <ion-datetime value="2000-01-01" placeholder="Select Date"></ion-datetime>
     </ion-item>
 
 
 
     <ion-item>
-      <ion-label>Data Final</ion-label>
+      <ion-label class="labelData">Data Final</ion-label>
       <ion-datetime value="2000-01-01" placeholder="Select Date"></ion-datetime>
     </ion-item>
   </ion-list>

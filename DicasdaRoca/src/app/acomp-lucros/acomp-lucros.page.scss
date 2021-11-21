@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2? family = Bebas + Neue & family = Fruktur & family = Noto + Sans + Mono: wght @ 900 & family = Abrir + Sans & family = Poppins: wght @ 400; 500; 700 & family = Zen + Maru + Gothic: wght @ 300 & display = swap ');
+
 ion-col {
   border: 1px solid rgb(255, 255, 255);
   text-align: center;
@@ -5,9 +7,39 @@ ion-col {
 }
 
 ion-content.background{
-    
-  --background: url(../../assets/icon/lucros-f.jpg) no-repeat center center / cover !important;
 
+  --background: url(../../assets/icon/lucros-f.png) no-repeat center center / cover
+  !important;
+
+}
+
+#fontSize {
+  font-size: 17px;
+}
+
+ion-label h3 {
+  font-weight: bold;
+  margin-top: 10px;
+  font-family: 'Open Sans', sans-serif;;
+}
+
+.labelData {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.buttonAcomp {
+  --background: $background;
+    background: #25A18E;
+    width: 308px;
+    height: 100px;
+    border-radius: 22px;
+    border: 2px solid #004E64;
+    margin-left: 29px;
+    margin-top: 23px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #004E64;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .backinput {
@@ -20,7 +52,7 @@ ion-content.background{
   height: 44px;
   left: 28px;
   padding: 4px;
-  margin: 9px 0 0 0;
+  margin: 9px 0 9px 0;
 }
 
 .buttonsave {
@@ -28,7 +60,7 @@ ion-content.background{
   height: 49px;
   left: 71px;
   --background: #25A18E;
-  margin: 0 70px 0 70px;
+  margin: 0 70px 9px 70px;
   border: 2px solid #22577A;
   outline: none;
   border-radius: 24px;
