@@ -1,30 +1,39 @@
 <ion-content padding class = "background">
   <br><ion-button class="buttonAcomp" (click)="abrirPaginaMC('menu-calc')">
     <span class="texto" id="fontSize">
-      ACOMPANHAMENTO DE LUCROS
+      ACOMPANHAMENTOS
     </span>
   </ion-button>
 
   <br>
 
-  <ion-label><h3>SELECIONE O PERÍODO</h3></ion-label>
+
+
+<ion-label class="DadosEsquerda">
+  <h1>
+    <!-- Header -->
+    <h1 class="NomeColunaEsquerda">Despesa</h1>
+    <h2 class="nomefaturamento">{{nomeDespesa}}</h2>
 
 
 
-  <ion-list background="none">
+    <h1 class="NomeColunaEsquerda">Faturamento</h1>
+    <h2 class="nomefaturamento">{{nomeFaturamento}}</h2>
 
-    <ion-item>
-      <ion-label class="labelData">Data Inicial</ion-label>
-      <ion-datetime value="2000-01-01" placeholder="Select Date"></ion-datetime>
-    </ion-item>
+  </h1>
+  <ion-label class="DadosDireita">
+    <h1>
+      <!-- Header -->
+      <h1 class="NomeColuna">Valor</h1>
+      <h2 id="ValorFaturamento">{{valorDespesa}}</h2>
+      <h1 class="NomeColuna">Valor</h1>
+      <h2 id="ValorFaturamento">{{valorFaturamento}}</h2>
+    </h1>
+  </ion-label>
+</ion-label>
 
+<ion-label><h3>PREENCHA O PERÍODO</h3></ion-label>
 
-
-    <ion-item>
-      <ion-label class="labelData">Data Final</ion-label>
-      <ion-datetime value="2000-01-01" placeholder="Select Date"></ion-datetime>
-    </ion-item>
-  </ion-list>
 
   <ion-input class="backinput" [(ngModel)]='mes' placeholder="Digite o mês que deseja consultar:"></ion-input>
 
@@ -43,13 +52,7 @@
     <span class="texto">Consultar</span>
   </ion-button>
 
- <!-- Header -->
-{{nomeDespesa}}
-{{valorDespesa}}
 
-
-{{nomeFaturamento}}
-{{valorFaturamento}}
 
 
 </ion-content>
